@@ -1,0 +1,18 @@
+{
+  "name": "article_layout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev-server": "lite-server",
+    "dev-sass": "sass sass/main.scss styles/main.css -w",
+    "dev": "concurrently -n server, sass, 'yarn dev-server' 'yarn dev-sass'" 
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
