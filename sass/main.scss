@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "./base";
 
 .article__layout {
   display: grid;
@@ -21,7 +17,7 @@
   .nav {
     grid-column: 1 / -1;
     grid-row: 1;
-    background-color: burlywood;
+    background-color: #fff;
     height: 50px;
     z-index: 1;
   }

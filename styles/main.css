@@ -1,7 +1,21 @@
+/* == Break points == */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+}
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 .article__layout {
@@ -21,7 +35,7 @@
 .article__layout .nav {
   grid-column: 1/-1;
   grid-row: 1;
-  background-color: burlywood;
+  background-color: #fff;
   height: 50px;
   z-index: 1;
 }
